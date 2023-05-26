@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+// palindrome number/string
+
+int main()
+{
+    // i/p: "naman" ---> o/p: "palindrome"
+    // i/p:  12321 ---> o/p: "palindrome"
+    // i/p:  127821 ---> o/p: "not palindrome"
+    
+    
+    
+    
+    char str[100];
+    scanf("%s", &str);
+    int i = 0;
+    int j = strlen(str)-1;
+    
+    while (i <= j) {
+        
+        if (str[i] != str[j]) {
+            printf("not palindrome!!");
+            return 0;
+        }
+        
+        i++;
+        j--;
+    }
+    
+    printf("it is palindrome!!");
+    return 0;
+}

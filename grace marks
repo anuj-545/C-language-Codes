@@ -1,0 +1,59 @@
+#include<stdio.h>
+int main()
+{
+    int ans ;
+    printf("enter the class obtained by the student:");
+    scanf("%d",&ans);
+    
+    switch(ans)
+    {
+        case 1:
+        int f1 , grace ;
+        printf("number of subjects a student failed:");
+        scanf("%d",&f1);
+        if(f1>3)
+        {
+            printf("\n\nno grace marks will be given ");
+        }
+        else
+        {
+          grace = 5*(5-f1);
+          printf("\nthe total grace marks is %d",grace);
+        }
+        break ;
+        
+        case 2 :
+        int f2 , grace1;
+        printf("number of subjects a student failed:");
+        scanf("%d",&f2);
+        if(f2>2)
+        {
+            printf("\n\nno grace marks will be given");
+        }
+        else
+        {
+            grace1 = 4*(5-f2);
+            printf("\nthe total grace marks is %d",grace1);
+        }
+        break;
+        
+        case 3 :
+        int f3 , grace2 ;
+        printf("number of subjects a student failed:");
+        scanf("%d",&f3);
+        if(f3>1)
+        {
+            printf("\n\nno grace marks will be given");
+        }
+        else
+        {
+            grace2 = 5*(5-f2);
+            printf("\nthe total grace marks is %d",grace2);
+        }
+        break ;
+        
+    }
+        
+    return 0 ;
+}
+    
